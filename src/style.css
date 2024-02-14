@@ -1,0 +1,21 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #d4dede,
+    #cedfe4,
+    #cbdfec,
+    #ceddf3,
+    #d8daf7
+  );
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+}
+.weather-app {
+  background: #dfe0f6;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.5);
+  border-radius: 10px;
+}
