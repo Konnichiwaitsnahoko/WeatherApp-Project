@@ -34,6 +34,13 @@ header {
   padding: 15px 20px;
 }
 
+.search-form-input:focus {
+  outline: #d8daf7 0.2px solid;
+}
+.search-form-input:hover {
+  cursor: pointer;
+}
+
 .search-form-button {
   background-color: #324b4b;
   color: white;
@@ -41,6 +48,13 @@ header {
   border-radius: 5px;
   padding: 15px 30px;
   margin-left: 5px;
+  transition: all 200ms ease;
+  opacity: 1;
+}
+
+.search-form-button:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 
 .weather-info {
