@@ -60,9 +60,33 @@ header {
   font-weight: 400;
   line-height: 24px;
 }
+.weather-info-details-humidity,
+.weather-info-details-wind {
+  color: #7ab5b6;
+}
 
 .weather-info-temperature {
-  padding-top: 30px;
+  display: block;
+  text-align: right;
+  padding-top: 18px;
+  color: #324b4b;
+}
+
+.weather-info-temperature-icon {
+  font-size: 40px;
+}
+
+.weather-info-temperature-current {
+  text-align: right;
+  padding-top: 18px;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.weather-info-temperature-unit {
+  font-size: 28px;
+  position: relative;
+  top: -38px;
 }
 
 footer {
