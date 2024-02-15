@@ -21,20 +21,26 @@
     <div class="weather-app">
       <header>
         <form class="search-form">
-          <input type="search" placeholder="Enter a city.." required class="search-form-input"/>
-          <input type="submit" value="Search"  class="search-form-button"/>
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input" />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Los Angeles</h1>
-          <p>
-            Wednesday 10:42, clear sky
-            <br />
-            Humidity: 88%, Wind: 3.6km/h
-          </p>
+        <div class="weather-info">
+          <div>
+            <h1 class="weather-info-city">Los Angeles</h1>
+            <p class="weather-info-details">
+              Wednesday 10:42, clear sky
+              <br />
+              Humidity: 88%, Wind: 3.6km/h
+            </p>
+          </div>
+          <div class="weather-info-temperature">🌞13°C</div>
         </div>
-        <div>🌞13°C</div>
       </main>
       <footer>
         Coded by

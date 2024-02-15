@@ -43,6 +43,28 @@ header {
   margin-left: 5px;
 }
 
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-info-city {
+  font-size: 38px;
+  color: #324b4b;
+  font-weight: 900;
+}
+
+.weather-info-details {
+  margin: 0 auto 30px;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.weather-info-temperature {
+  padding-top: 30px;
+}
+
 footer {
   border-top: 1px solid#f9f7fe;
   padding: 30px 0 0 0;
