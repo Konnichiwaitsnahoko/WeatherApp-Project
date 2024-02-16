@@ -20,24 +20,26 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
-            class="search-form-input" />
+            class="search-form-input"
+            id="search-form-input" />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
         <div class="weather-info">
           <div>
-            <h1 class="weather-info-city">Los Angeles</h1>
+            <h1 class="weather-info-city" id="weather-info-city">Los Angeles</h1>
             <p class="weather-info-details">
               Wednesday 10:42, clear sky
               <br />
-              Humidity: <strong class="weather-info-details-humidity">88%</strong>, 
-              Wind: <strong class="weather-info-details-wind">3.6km/h</strong>
+              Humidity:
+              <strong class="weather-info-details-humidity">88%</strong>, Wind:
+              <strong class="weather-info-details-wind">3.6km/h</strong>
             </p>
           </div>
           <div class="weather-info-temperature">
@@ -63,5 +65,6 @@
         >.
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
