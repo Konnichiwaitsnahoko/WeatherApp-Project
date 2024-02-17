@@ -6,6 +6,9 @@ function updateWeather(response) {
   cityElement.innerHTML = response.data.city;
   let countryElemnt = document.querySelector("#weather-info-country");
   countryElemnt.innerHTML = response.data.country;
+  let descriptionElement = document.querySelector("#details-description");
+  descriptionElement.innerHTML = response.data.condition.description;
+  let 
 }
 
 function searchCity(city) {
