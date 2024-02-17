@@ -8,7 +8,10 @@ function updateWeather(response) {
   countryElemnt.innerHTML = response.data.country;
   let descriptionElement = document.querySelector("#details-description");
   descriptionElement.innerHTML = response.data.condition.description;
-  let 
+  let humdityElement = document.querySelector("#details-humdity");
+  humdityElement.innerHTML = response.data.temperature.humidity;
+  let windElement = document.querySelector("#details-wind");
+  windElement.innerHTML = response.data.wind.speed;
 }
 
 function searchCity(city) {
