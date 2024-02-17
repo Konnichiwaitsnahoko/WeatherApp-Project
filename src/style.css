@@ -67,6 +67,15 @@ header {
   font-weight: 900;
 }
 
+.weather-info-country {
+  position: relative;
+  top: -40px;
+  margin-top: 0;
+  font-size: 16px;
+
+  color: rgba(39, 33, 66, 0.4);
+}
+
 .weather-info-details {
   margin: 0 auto 30px;
   color: rgba(39, 33, 66, 0.4);
