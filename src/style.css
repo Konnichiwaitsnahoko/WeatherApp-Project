@@ -33,15 +33,19 @@ header {
   font-size: 16px;
   padding: 15px 20px;
 }
-
+.search-form-input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+}
 .search-form-input:focus {
-  outline: #d8daf7 0.2px solid;
+  outline: #324b4b 0.2px solid;
 }
 .search-form-input:hover {
   cursor: pointer;
 }
 
 .search-form-button {
+  font-family: "Montserrat", sans-serif;
   background-color: #324b4b;
   color: white;
   border: none;
