@@ -96,7 +96,9 @@ header {
 }
 
 .weather-info-temperature-icon {
-  font-size: 40px;
+  width: auto;
+  position: relative;
+  bottom: -23px;
 }
 
 .weather-info-temperature-current {

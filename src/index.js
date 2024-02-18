@@ -18,9 +18,12 @@ function updateWeather(response) {
   let windSpeedElement = document.querySelector("#details-wind");
   windSpeedElement.innerHTML = `${response.data.wind.speed} km/h`;
 
-  let timeElement = document.querySelector("#details-time");
   let date = new Date(response.data.time * 1000);
+  let timeElement = document.querySelector("#details-time");
   timeElement.innerHTML = formatDate(date);
+
+  let iconElement = document.querySelector("#weather-info-temperature-icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-info-temperature-icon"/>`;
 }
 
 function formatDate(date) {
@@ -36,11 +39,9 @@ function formatDate(date) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-
   return `${day} ${hours}:${minutes}`;
 }
 
@@ -59,4 +60,12 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Pasadena");
+let searchInputElement = document.querySelector("#search-form-input");
+searchInputElement.addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    handleSearchSubmit(event);
+  }
+});
+
+searchCity("Los Angeles");
