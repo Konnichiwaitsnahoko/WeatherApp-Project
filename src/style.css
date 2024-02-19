@@ -126,21 +126,23 @@ header {
   font-size: 16px;
   font-weight: 700;
   color: #324b4b;
+  line-height: 24px;
 }
 
 .weather-forecast-temperature {
   font-size: 14px;
+  margin-bottom: 30px;
 }
 
 .weather-forecast-temperature-highest {
-  text-align: center;
   color: #7ab5b6;
-  font-weight: 500;
+  font-weight: bold;
+  padding-right: 6px;
 }
 
 .weather-forecast-temperature-lowest {
-  text-align: center;
   color: rgba(39, 33, 66, 0.4);
+  padding-left: 6px;
 }
 
 footer {
