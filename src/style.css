@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  border-bottom: 1px solid#f9f7fe;
+  border-bottom: 1px solid #f9f7fe;
   padding: 0 0 30px 0;
 }
 
@@ -66,7 +66,7 @@ header {
   justify-content: space-between;
 }
 .weather-info-city {
-  font-size: 38px;
+  font-size: 40px;
   color: #324b4b;
   font-weight: 900;
 }
@@ -116,6 +116,31 @@ header {
   font-size: 28px;
   position: relative;
   top: -38px;
+}
+
+.weather-forecast {
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  font-weight: 700;
+  color: #324b4b;
+}
+
+.weather-forecast-temperature {
+  font-size: 14px;
+}
+
+.weather-forecast-temperature-highest {
+  text-align: center;
+  color: #7ab5b6;
+  font-weight: 500;
+}
+
+.weather-forecast-temperature-lowest {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
 }
 
 footer {
