@@ -119,12 +119,14 @@ header {
 }
 
 .weather-forecast {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
+  margin-top: 20px;
 }
 
 .weather-forecast-day {
-  display: inline-block;
-  margin-right: 10px;
+  flex: 1;
 }
 
 .weather-forecast-date {
