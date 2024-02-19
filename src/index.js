@@ -1,28 +1,22 @@
 function updateWeather(response) {
   let temperatureElement = document.querySelector("#temperature-current");
   let temperature = response.data.temperature.current;
-  temperatureElement.innerHTML = Math.round(temperature);
-
   let cityElement = document.querySelector("#weather-info-city");
-  cityElement.innerHTML = response.data.city;
-
   let countryElement = document.querySelector("#weather-info-country");
-  countryElement.innerHTML = response.data.country;
-
   let descriptionElement = document.querySelector("#details-description");
-  descriptionElement.innerHTML = response.data.condition.description;
-
   let humidityElement = document.querySelector("#details-humidity");
-  humidityElement.innerHTML = `${response.data.temperature.humidity} %`;
-
   let windSpeedElement = document.querySelector("#details-wind");
-  windSpeedElement.innerHTML = `${response.data.wind.speed} km/h`;
-
   let date = new Date(response.data.time * 1000);
   let timeElement = document.querySelector("#details-time");
-  timeElement.innerHTML = formatDate(date);
-
   let iconElement = document.querySelector("#weather-info-temperature-icon");
+
+  temperatureElement.innerHTML = Math.round(temperature);
+  cityElement.innerHTML = response.data.city;
+  countryElement.innerHTML = response.data.country;
+  descriptionElement.innerHTML = response.data.condition.description;
+  humidityElement.innerHTML = `${response.data.temperature.humidity} %`;
+  windSpeedElement.innerHTML = `${response.data.wind.speed} km/h`;
+  timeElement.innerHTML = formatDate(date);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-info-temperature-icon"/>`;
 }
 
