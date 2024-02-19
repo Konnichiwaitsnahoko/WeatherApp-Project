@@ -122,11 +122,21 @@ header {
   text-align: center;
 }
 
+.weather-forecast-day {
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .weather-forecast-date {
   font-size: 16px;
   font-weight: 700;
   color: #324b4b;
   line-height: 24px;
+}
+
+.weather-forecast-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 
 .weather-forecast-temperature {
@@ -137,12 +147,10 @@ header {
 .weather-forecast-temperature-highest {
   color: #7ab5b6;
   font-weight: bold;
-  padding-right: 6px;
 }
 
 .weather-forecast-temperature-lowest {
   color: rgba(39, 33, 66, 0.4);
-  padding-left: 6px;
 }
 
 footer {
