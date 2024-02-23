@@ -1,5 +1,6 @@
 body {
   height: 100vh;
+  overflow: hidden;
   background-image: linear-gradient(
     to right top,
     #d4dede,
@@ -125,6 +126,10 @@ header {
   margin-top: 20px;
 }
 
+.weather-forecast-day {
+  flex: 1;
+}
+
 .weather-forecast-date {
   font-size: 16px;
   font-weight: 700;
@@ -133,7 +138,7 @@ header {
 }
 
 .weather-forecast-icon {
-  width: 75%;
+  width: 70%;
   margin-bottom: 20px;
 }
 
@@ -145,10 +150,12 @@ header {
 .weather-forecast-temperature-highest {
   color: rgb(50, 75, 75, 0.9);
   font-weight: bold;
+  margin-right: 5px;
 }
 
 .weather-forecast-temperature-lowest {
   color: rgb(50, 75, 75, 0.6);
+  margin-left: 6px;
 }
 
 footer {
